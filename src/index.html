@@ -7,12 +7,71 @@
             type="image/svg+xml"
             href="./assets/images/Letter-F.svg"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>App</title>
+        <title>Rotating Navigation App</title>
     </head>
     <body>
-        <div id="container">Hallo Welt!</div>
+        <div class="container show-nav">
+            <div class="circle-container">
+                <div class="circle">
+                    <button id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
 
+            <div class="content">
+                <h1>Powerfull Toys</h1>
+                <small>Frank McDonald</small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    neque asperiores magnam dolore consequatur numquam sequi
+                    reiciendis possimus quam maiores quos, voluptatum cumque
+                    omnis quaerat, nemo doloremque facilis ut delectus
+                    dignissimos quod iusto officiis minus ad eaque. Quae est
+                    dolores hic, vitae molestiae corrupti recusandae eaque dolor
+                    doloremque nulla, laboriosam ut quas blanditiis repellat
+                    perferendis incidunt architecto nisi eveniet sunt! Pariatur
+                    tenetur beatae neque dolorum dolorem nam accusantium velit
+                    saepe voluptas, ratione a quia, fugit repellendus quasi iste
+                    ullam aperiam exercitationem quidem, officiis nemo! Optio,
+                    quasi eos iure facere accusantium ea autem, temporibus atque
+                    ipsam iusto libero eius voluptate doloribus?
+                </p>
+                <h3>My Ape</h3>
+                <img
+                    src="./assets/images/ape_with_hoodie.png"
+                    alt="Ape with Hoodie"
+                    class="img"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    amet natus nemo corporis optio quasi impedit maiores
+                    suscipit eius, sint aperiam dolores porro, cum odit totam?
+                    Illo voluptatem animi aliquam.
+                </p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <i class="fas fa-home"> Home</i>
+                    <i class="fas fa-user-alt"> About</i>
+                    <i class="fas fa-envelope"> Contact</i>
+                </li>
+            </ul>
+        </nav>
         <script type="module" src="./js/main.js"></script>
     </body>
 </html>

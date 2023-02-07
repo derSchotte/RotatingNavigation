@@ -1,3 +1,20 @@
-@import "preset";
+@import 'preset';
 
-#app{ }
+.img {
+    width: 10%;
+}
+
+body {
+    overflow-x: hidden;
+    color: $black;
+}
+
+.container {
+    background-color: $grayishWhite;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
