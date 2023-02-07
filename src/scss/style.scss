@@ -1,9 +1,5 @@
 @import 'preset';
 
-.img {
-    width: 10%;
-}
-
 body {
     overflow-x: hidden;
     color: $black;
@@ -13,8 +9,57 @@ body {
     background-color: $grayishWhite;
     transform-origin: top left;
     transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0px 150px;
 }
 
 .container.show-nav {
     transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: $red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transform: transition 0.5s linear;
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content .img {
+    width: 100%;
 }
