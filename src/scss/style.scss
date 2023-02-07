@@ -34,6 +34,10 @@ body {
     transform: transition 0.5s linear;
 }
 
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
 .circle button {
     cursor: pointer;
     position: absolute;
@@ -60,6 +64,55 @@ body {
     transform-origin: top left;
 }
 
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s linear;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    width: 180px;
+    transform: translateX(-140%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 .content .img {
     width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #4e5c70;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.content p {
+    line-height: 1.5;
 }
